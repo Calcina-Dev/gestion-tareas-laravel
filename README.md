@@ -13,7 +13,7 @@ Este proyecto es una aplicación web para gestionar tareas. Los usuarios pueden 
 
 1. Clona el repositorio:
 
-   ```bash
+ 
    git clone https://github.com/calcina-dev/gestion-tareas-laravel.git
    cd estion-tareas-laravel
 
@@ -24,8 +24,8 @@ Esta es la documentación de la API que permite gestionar tareas dentro de una p
 Base URL
 La API se encuentra disponible en:
 
-bash
-Copiar código
+
+
 http://localhost:8000/api
 Autenticación
 La API utiliza Laravel Sanctum para la autenticación basada en tokens. Para acceder a los endpoints, se requiere un token de autenticación válido.
@@ -38,7 +38,7 @@ Descripción: Este endpoint permite a los usuarios obtener un token de autentica
 Request:
 
 json
-Copiar código
+
 {
   "email": "usuario@ejemplo.com",
   "password": "contraseña"
@@ -46,7 +46,7 @@ Copiar código
 Respuesta:
 
 json
-Copiar código
+
 {
   "access_token": "token_aqui",
   "token_type": "bearer"
@@ -62,7 +62,7 @@ Authorization: Bearer {token}
 Respuesta:
 
 json
-Copiar código
+
 [
   {
     "id": 1,
@@ -89,7 +89,7 @@ Descripción: Crea una nueva tarea.
 Request:
 
 json
-Copiar código
+
 {
   "dni": "12345678",
   "titulo": "Nueva tarea",
@@ -100,7 +100,7 @@ Copiar código
 Respuesta:
 
 json
-Copiar código
+
 {
   "id": 3,
   "dni": "12345678",
@@ -123,7 +123,7 @@ Authorization: Bearer {token}
 Respuesta:
 
 json
-Copiar código
+
 {
   "id": 1,
   "dni": "12345678",
@@ -140,7 +140,7 @@ Descripción: Actualiza los detalles de una tarea existente.
 Request:
 
 json
-Copiar código
+
 {
   "dni": "12345678",
   "titulo": "Tarea actualizada",
@@ -151,7 +151,7 @@ Copiar código
 Respuesta:
 
 json
-Copiar código
+
 {
   "id": 1,
   "dni": "12345678",
@@ -174,7 +174,7 @@ Authorization: Bearer {token}
 Respuesta:
 
 json
-Copiar código
+
 {
   "message": "Tarea eliminada con éxito"
 }
@@ -185,7 +185,7 @@ Este error ocurre cuando no se proporciona un token válido o el token ha expira
 Ejemplo de respuesta:
 
 json
-Copiar código
+
 {
   "message": "Unauthenticated."
 }
@@ -195,7 +195,7 @@ Este error ocurre cuando los datos enviados no son válidos (por ejemplo, si fal
 Ejemplo de respuesta:
 
 json
-Copiar código
+
 {
   "message": "The given data was invalid.",
   "errors": {
