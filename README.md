@@ -14,5 +14,5 @@ Este proyecto es una aplicación web para gestionar tareas. Los usuarios pueden 
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu_usuario/proyecto-laravel.git
-   cd proyecto-laravel
+   git clone https://github.com/calcina-dev/gestion-tareas-laravel.git
+   cd estion-tareas-laravel
